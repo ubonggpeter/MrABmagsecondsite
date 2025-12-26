@@ -978,7 +978,7 @@ Please confirm my payment. I will upload my proof of payment now (picture/screen
           const url = "mailto:" + emailTo + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(msg);
           window.location.href = url;
         } else if (channel === 'telegram'){
-          const tgLink = "https://t.me/Toyosimagnus";
+          const tgLink = "https://t.me/magnusverification";
           const url = tgLink + "?text=" + encodeURIComponent(msg);
           window.location.href = url;
         }
@@ -1039,8 +1039,8 @@ Please confirm my payment. I will upload my proof of payment now (picture/screen
     // OPay: redirect straight to Telegram DM with an auto-filled message
     if (methodKey === 'opay'){
       const msg = encodeURIComponent('Hello Verified PayFac, I am an opay user, how do I make payment immediately.');
-      const deep = 'tg://resolve?domain=Toyosimagnus&text=' + msg;
-      const web  = 'https://t.me/Toyosimagnus?text=' + msg;
+      const deep = 'tg://resolve?domain=magnusverification&text=' + msg;
+      const web  = 'https://t.me/magnusverification?text=' + msg;
 
       if (methodModal){
         methodModal.classList.add('hidden');
@@ -1058,8 +1058,8 @@ Please confirm my payment. I will upload my proof of payment now (picture/screen
     // Foreign Payments: redirect straight to Telegram DM with an auto-filled message
     if (methodKey === 'usdt'){
       const msg = encodeURIComponent('I am from______ country , I want to make payment in my country\'s currency.\nHow do I pay and start immediately.');
-      const deep = 'tg://resolve?domain=Toyosimagnus&text=' + msg;
-      const web  = 'https://t.me/Toyosimagnus?text=' + msg;
+      const deep = 'tg://resolve?domain=magnusverification&text=' + msg;
+      const web  = 'https://t.me/magnusverification?text=' + msg;
 
       if (methodModal){
         methodModal.classList.add('hidden');
